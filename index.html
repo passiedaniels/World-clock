@@ -8,29 +8,44 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div>
-      <header>World clock</header>
+    <header class="game">World clock</header>
+    <div class="world-clock">
       <main>
-        <select name="countries" id="country">
-          <option value="">Select a city</option>
-          <option value="nairobi">Nairobi</option>
-          <option value="paris">Paris</option>
-          <option value="berlin">Berlin</option>
-          <option value="amsterdam">Amsterdam</option>
-        </select>
+        <div class="select">
+          <select name="countries" id="country">
+            <option value="">Select a city</option>
+            <option value="nairobi">Nairobi</option>
+            <option value="paris">Paris</option>
+            <option value="berlin">Berlin</option>
+            <option value="amsterdam">Amsterdam</option>
+          </select>
+        </div>
         <div class="flex">
-          <div id="city"><strong> New jersey ❤</strong></div>
-          <div id="place">United states</div>
-          <div id="time">10:45:30</div>
-          <div id="city"><strong>Toronto🧡</strong></div>
-          <div id="place">Canada</div>
-          <div id="time">10:45:30</div>
-          <div id="city"><strong>Wembley💛</strong></div>
-          <div id="place">United Kingdom</div>
-          <div id="time">10:45:30</div>
-          <div id="city"><strong>Barcelona💚</strong></div>
-          <div id="place">Spain</div>
-          <div id="time">10:45:30</div>
+          <div class="clock-row">
+            <div class="clock-it">
+              <div id="city"><strong> New jersey ❤</strong></div>
+              <div id="place">United states</div>
+              <div id="time">Jan 12 10:45</div>
+            </div>
+
+            <div class="clock-it">
+              <div id="city"><strong>Toronto🧡</strong></div>
+              <div id="place">Canada</div>
+              <div id="time">Jan 12 10:45</div>
+            </div>
+          </div>
+          <div class="clock-row">
+            <div class="clock-it">
+              <div id="city"><strong>Wembley💛</strong></div>
+              <div id="place">United Kingdom</div>
+              <div id="time">Jan 12 10:45</div>
+            </div>
+            <div class="clock-it">
+              <div id="city"><strong>Barcelona💚</strong></div>
+              <div id="place">Spain</div>
+              <div id="time">Jan 12 10:45</div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
