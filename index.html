@@ -6,6 +6,8 @@
 
     <title>My World clock</title>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.47/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
   <body>
     <header class="game">World clock</header>
@@ -22,28 +24,28 @@
         </div>
         <div class="flex">
           <div class="clock-row">
-            <div class="clock-it">
+            <div class="clock-it" id="new-jersey">
               <div id="city"><strong> New jersey ❤</strong></div>
               <div id="place">United states</div>
-              <div id="time">Jan 12 10:45</div>
+              <div class="time">Jan 12 10:45 <small>am</small></div>
             </div>
 
-            <div class="clock-it">
+            <div class="clock-it" id="toronto">
               <div id="city"><strong>Toronto🧡</strong></div>
               <div id="place">Canada</div>
-              <div id="time">Jan 12 10:45</div>
+              <div class="time">Jan 12 10:45<small>am</small></div>
             </div>
           </div>
           <div class="clock-row">
-            <div class="clock-it">
+            <div class="clock-it" id="wembley">
               <div id="city"><strong>Wembley💛</strong></div>
               <div id="place">United Kingdom</div>
-              <div id="time">Jan 12 10:45</div>
+              <div class="time">Jan 12 10:45<small>am</small></div>
             </div>
-            <div class="clock-it">
+            <div class="clock-it" id="barcelona">
               <div id="city"><strong>Barcelona💚</strong></div>
               <div id="place">Spain</div>
-              <div id="time">Jan 12 10:45</div>
+              <div class="time">Jan 12 10:45<small>am</small></div>
             </div>
           </div>
         </div>
