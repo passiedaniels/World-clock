@@ -35,6 +35,9 @@ setInterval(updateTime, 1000);
 
 function updateCity(event) {
   let cityTimezone = event.target.value;
+  if (cityTimezone === "current") {
+    cityTimezone = moment.tz.guess();
+  }
   let cityParts = cityTimezone.split("/");
   let region = cityParts[0];
   let city = cityParts[1].replace("_", " ");
